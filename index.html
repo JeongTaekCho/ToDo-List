@@ -3,10 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="./style.css" />
-    <script src="./script.js"></script>
+    <script src="./script.js" defer></script>
     <title>ToDo-List</title>
   </head>
   <body>
-    <div class="wrap"></div>
+    <h1>ToDo</h1>
+    <div class="todo_container">
+      <input type="text" id="todo-input" onkeydown="keyCodeCheck()" />
+      <ul id="todo_list"></ul>
+    </div>
+    <div class="delete_btn_wrapper">
+      <button onclick="deleteAll()">전체 삭제</button>
+    </div>
   </body>
 </html>
